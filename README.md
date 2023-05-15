@@ -10,11 +10,11 @@ check it out https://12001565-terriblytinytales.netlify.app/
 
 To run the application locally, follow these steps:
 
-1. Clone the repository:git clone 
+1. Clone the repository: git clone https://github.com/Raone2728/TERRIBLY-TINY-TALES-Assignment/tree/main
 
-2. Install the dependencies:npm install
+2. Install the dependencies: npm install
 
-3. Start the development server:npm start
+3. Start the development server: npm start
 
 4. Open [http://localhost:3000](http://localhost:3000) in your web browser to view the application.
 
