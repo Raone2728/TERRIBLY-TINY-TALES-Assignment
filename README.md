@@ -1,71 +1,40 @@
-# Getting Started with Create React App
+# Terribly Tiny Tales Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Hosting
 
-## Available Scripts
+The application has been deployed on Netlify. 
 
-In the project directory, you can run:
+check it out https://12001565-terriblytinytales.netlify.app/
 
-### `yarn start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To run the application locally, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:git clone 
 
-### `yarn test`
+2. Install the dependencies:npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Start the development server:npm start
 
-### `yarn build`
+4. Open [http://localhost:3000](http://localhost:3000) in your web browser to view the application.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Components
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The application is structured into the following components:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Api**: This component exports a function called fetchApi that fetches data from an API endpoint specified in the REACT_APP_API_URL environment variable. It uses the fetch function to make the HTTP request and returns the response as a text string.
+- **components**:HistogramChart.js: This component is a reusable React functional component called HistogramChart. It receives a data prop, which is an array of objects containing letter and frequency data. It dynamically adjusts the width and height of the chart based on the window size using the useState hook. It also handles resizing of the chart with the useEffect hook. The component renders a responsive bar chart using the 
+- **Utils**:This component contains utility functions for data processing. The filterAlphabet function filters out non-alphabetic characters from an object, returning a new object with only alphabetic keys. The objToArr function converts an object into an array of objects, sorting them based on frequency in descending order. The calculateWordFrequencies function calculates word frequencies from a text string, filters out non-alphabetic characters, and returns the top 20 most frequent words as an array of objects.
+- **App.js**:This component is the main component of the application. It imports functions and components from other files. It manages the state with the useState hook, storing the wordArray and loading states. The fetchData function fetches data using fetchApi, calculates word frequencies using calculateWordFrequencies, and updates the wordArray state. The component renders a container with a heading and a fetch button. When the fetch button is clicked, it triggers the fetchData function, which fetches data and updates the state. If the wordArray state is not empty, it renders the HistogramChart component with the wordArray data and a download button for exporting the data as a CSV file. The download button triggers the downloadData function, which converts the data to CSV format and initiates the download.
 
-### `yarn eject`
+## Libraries 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The project utilizes the following libraries and plugins:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **recharts**: This library provides charting components for React
+- **react**:A JavaScript library for building user interfaces
+- **react-dom**:react-dom is a package that serves as the entry point to the DOM and is specifically designed for React applications. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Terribly-Tiny-Tales-
