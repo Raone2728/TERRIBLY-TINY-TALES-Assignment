@@ -29,7 +29,7 @@ The application is structured into the following components:
 
 ## Libraries 
 
-The project utilizes the following libraries and plugins:
+The project utilizes the following libraries:
 
 - **recharts**: This library provides charting components for React
 - **react**:A JavaScript library for building user interfaces
